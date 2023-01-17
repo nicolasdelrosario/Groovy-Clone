@@ -1,0 +1,24 @@
+{
+  "name": "groovyclone",
+  "version": "1.0.0",
+  "description": "This project is a replica of the Groovy website. The goal is to showcase skills in web development and user interface design.",
+  "main": "lighthouserc.js",
+  "scripts": {
+    "build": "sass scss:staticDistDir/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasdelrosario/GroovyClone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasdelrosario/GroovyClone/issues"
+  },
+  "homepage": "https://github.com/nicolasdelrosario/GroovyClone#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "sass": "^1.57.1"
+  }
+}
