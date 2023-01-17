@@ -1,0 +1,20 @@
+@use '../abstracts/effects' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+
+.social {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 4;
+
+  a {
+    @include font-size(1.8rem, 400, 30px, $fuchsia);
+    @include size(30px, 30px, 0, 0);
+    background: $white;
+    border-radius: 50%;
+    border: $border;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

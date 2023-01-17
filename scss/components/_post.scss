@@ -1,0 +1,50 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/effects' as *;
+@use '../abstracts/mixins' as *;
+
+.post {
+  margin-bottom: 20px;
+  min-height: 70px;
+  padding-left: 75px;
+  position: relative;
+
+  .info {
+    display: flex;
+    padding: 0;
+    position: initial;
+
+    .thumb {
+      @include size(60px, 64px, 0, 0);
+      border-radius: 8px;
+      left: 0;
+      min-height: 52px;
+      overflow: inherit;
+      position: absolute;
+      top: 1px;
+
+      .full-image {
+        border-radius: 8px;
+      }
+
+      .number {
+        @include font-size(1.6rem, 700, 30px, $black);
+        @include size(30px, 30px, 0, 0);
+        background: url("https://ghost.estudiopatagon.com/groovy/assets/images/number-decoration.svg") no-repeat center center;
+        left: -10px;
+        position: absolute;
+        text-align: center;
+        top: -10px;
+        z-index: 3;
+      }
+    }
+
+    .right {
+      h4 {
+        @include font-size(1.5rem, 700, 22px, $black);
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+}

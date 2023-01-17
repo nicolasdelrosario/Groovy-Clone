@@ -1,0 +1,169 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/effects' as *;
+@use '../abstracts/typography' as *;
+
+#footer {
+  background: $light-brown;
+  border-bottom: $border;
+  border-top: $border;
+  margin-top: 120px;
+
+  .widgets {
+    .widget {
+      margin: 0 0 40px;
+      padding-bottom: 25px;
+      padding-top: 60px;
+      position: relative;
+
+      .widget-title {
+        @include font-size(2rem, 700, 1.4, $black);
+        background: $white;
+        border-radius: 100px;
+        border: $border;
+        left: 25px;
+        letter-spacing: 0.25px;
+        margin-bottom: 30px;
+        padding: 4px 25px;
+        position: absolute;
+        top: -20px;
+        z-index: 2;
+      }
+
+      .logo {
+        margin-bottom: 20px;
+        max-width: 240px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .text-widget {
+        p {
+          @include font-size(1.4rem, 400, 25px, $black);
+          margin-bottom: 20px;
+          padding-right: 20px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: $black;
+          }
+        }
+      }
+
+      .tags {
+        position: relative;
+
+        .tag {
+          margin: 0 10px 12px 0;
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    border-top: $border;
+    margin-top: 40px;
+    padding: 60px 50px;
+    text-align: center;
+
+    div {
+      margin: 0 auto;
+      max-width: 600px;
+
+      .subscribe-form {
+        position: relative;
+
+        h4 {
+          @include font-size(4rem, 700, 48px, $black);
+          font-family: $outfit;
+          margin-bottom: 30px;
+        }
+
+        .form-group {
+          margin: 0 auto;
+          max-width: 500px;
+          position: relative;
+
+          input {
+            border-radius: 100px;
+            border: $border;
+            font-family: $outfit;
+            font-size: 1.5rem;
+            height: 60px;
+            letter-spacing: 0.5px;
+            outline: 0;
+            padding: 15px 175px 15px 45px;
+          }
+
+          button {
+            @include font-size(1.7rem, 700, 31px, $white);
+            background: $fuchsia;
+            height: 47px;
+            padding: 0px 35px;
+            position: absolute;
+            right: 20px;
+            top: 7px;
+          }
+        }
+
+        .subscribe-decoration {
+          background: url(../../assets/icons/subscribe-decoration.png) no-repeat;
+          background-size: contain;
+          height: 103px;
+          left: -6%;
+          position: absolute;
+          top: 30px;
+          width: 125px;
+          z-index: 1;
+        }
+      }
+
+      .description {
+        @include font-size(1.5rem, 400, 27px, $black);
+        margin: 20px auto 0;
+        max-width: 400px;
+      }
+    }
+  }
+
+  nav {
+    margin-bottom: 20px;
+
+    .menu {
+      text-align: center;
+
+      li {
+        display: inline;
+        margin-left: 7px;
+        padding: 0;
+
+        .sep {
+          background: $black;
+          display: inline-block;
+          height: 10px;
+          margin-right: 10px;
+          margin-top: -1px;
+          opacity: 0.35;
+          vertical-align: middle;
+          width: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #footer {
+    .widgets {
+      .widget {
+        margin: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

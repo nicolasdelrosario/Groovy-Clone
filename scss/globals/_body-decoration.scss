@@ -1,0 +1,23 @@
+@media (min-width: 1200px) {
+  .body-decoration {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    &::before, &::after {
+      background: url("https://ghost.estudiopatagon.com/groovy/assets/images/background-decoration.svg") 6% 100px no-repeat;
+      content: '';
+      height: 100vh;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &::after {
+      transform: scaleX(-1);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/effects' as *;
+
+.title {
+  @include font-size(2rem, 700, 1.4, $black);
+  background: $white;
+  border-radius: 100px;
+  border: $border;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  padding: 4px 25px;
+}

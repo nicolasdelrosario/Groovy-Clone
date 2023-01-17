@@ -1,0 +1,35 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/effects' as *;
+@use '../abstracts/mixins' as *;
+
+.author {
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+
+  .thumb {
+    img {
+      height: 100%;
+      object-fit: cover;
+      transition: all 300ms ease;
+      width: 100%;
+    }
+  
+    &:hover {
+      box-shadow: $small-shadow;
+      transform: translate(-1px, -1px);
+  
+      .info h3 {
+        box-shadow: $small-shadow;
+        transform: translate(-1px, -1px);
+      }
+    }
+  
+  }
+
+  .bio {
+    @include font-size(1.3rem, 400, 24px, $black);
+    padding: 20px 5px 0;
+  }
+}

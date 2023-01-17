@@ -1,0 +1,111 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/effects' as *;
+@use '../abstracts/mixins' as *;
+
+.articles {
+  .article {
+    margin: 0 auto 50px;
+    padding: 0;
+    text-align: center;
+
+    .article-content {
+      @include size(auto, auto, 20px 20px 25px, 0 20px);
+      border-radius: 15px;
+      border: $border;
+      position: relative;
+      z-index: 2;
+
+      header {
+
+        .post-format-image {
+
+          .featured-image {
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+
+            &:hover {
+              .main-title,
+              .title {
+                box-shadow: $small-shadow;
+                transform: translate(-1px, -1px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .post-excerpt {
+      @include font-size(1.3rem, 400, 23px, $black);
+      @include size(auto, auto, 0 20px 15px, 20px 0);
+    }
+
+    .bottom {
+      margin-top: 10px;
+
+      a {
+        @include font-size(1.4rem, 700, 25px, $black);
+      }
+    }
+  }
+}
+
+//Thumb
+.thumb {
+  @include size(auto, 340px, 0, 0);
+  border-radius: 15px;
+  border: $border;
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  .full-image {
+    @include size(100%, 100%, 0, 0);
+    left: 0;
+    position: absolute;
+  }
+}
+
+//Info
+.info {
+  bottom: 0px;
+  left: 0px;
+  padding: 15px 15px;
+  position: absolute;
+  width: 100%;
+
+  .main-title,
+  .title {
+    background: $white;
+    border-radius: 8px;
+    border: $border;
+    margin-bottom: 0;
+
+    a {
+      @include font-size(1.6rem, 700, 1.5, $black);
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .articles {
+    .article {
+      .post-excerpt {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+//Info
+  .info {
+    .main-title,
+    .title {
+      a {
+        font-size: 1.9rem;
+      }
+    }
+  }
+}

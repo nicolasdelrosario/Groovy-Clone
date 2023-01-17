@@ -1,0 +1,24 @@
+@use './colors';
+
+//bezier
+$bezier: cubic-bezier(0.5, 2.5, 0.7, 0.7);
+//border
+$border: 1px solid rgba(39, 39, 39, 0.75);
+//shadow
+$small-shadow: colors.$black 2px 2px 0px 0px;
+
+.cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-move {
+  position: relative;
+  transition: all 300ms ease;
+  z-index: 10;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

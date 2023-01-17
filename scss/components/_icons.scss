@@ -1,0 +1,39 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/effects' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/typography' as *;
+
+.icons {
+  a {
+    color: $soft-black;
+    display: block;
+    margin-bottom: 10px;
+    transition: all 300ms $bezier;
+
+    .icon {
+      @include font-size(2.1rem, 400, 42px, $black);
+      @include size(42px, 42px, 0, 0);
+      background-color: $white;
+      border-radius: 50%;
+      border: $border;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .name {
+      @include font-size(1.8rem, 700, 32.5px, $black);
+      font-family: $outfit;
+      margin-left: 10px;
+      padding-bottom: 5px;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      .icon {
+        box-shadow: $small-shadow;
+        transform: translate(-1px, -1px);
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use '../abstracts/mixins' as *;
+
+
+.social-buttons {
+  left: calc(50% + 303px);
+  margin-left: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 300ms ease;
+  z-index: 10;
+
+  a {
+    @include size(34px, 2.2rem, 0, 0 2px);  
+    display: inline-block;
+    text-align: center;
+
+    i {
+      font-size: 2.2rem
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .social-buttons {
+    left: calc(56% + 303px);
+  }
+}

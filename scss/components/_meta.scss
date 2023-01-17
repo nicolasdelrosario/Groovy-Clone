@@ -1,0 +1,49 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/effects' as *;
+@use '../abstracts/mixins' as *;
+
+.meta {
+  &.absolute {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+
+    .meta-info {
+      @include font-size(1.3rem, 400, 35px, $white);
+      @include size(35px, 35px, 0, 0 0 0 5px);
+      background: $black;
+      border-radius: 50%;
+      display: flex;
+      float: right;
+      text-align: center;
+
+      i {
+        color: $white;
+        line-height: 35px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &.date {
+    @include font-size(1.3rem, 500, 24px, $black);
+    margin-bottom: 15px;
+
+    .meta-info {
+      display: inline-block;
+      margin: 0 5px 0 0;
+    }
+
+    .min-read {
+      &::before {
+        @include size(5px, 5px, 0, -2px 15px 0 0);
+        background: $fuchsia;
+        border-radius: 50%;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
