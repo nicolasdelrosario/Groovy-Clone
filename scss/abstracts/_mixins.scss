@@ -1,0 +1,13 @@
+@mixin font-size($fontsize, $fontweight, $lineheight, $color) {
+  color: $color;
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  line-height: $lineheight;
+}
+
+@mixin size($width, $height, $padding, $margin) {
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+  width: $width;
+}
