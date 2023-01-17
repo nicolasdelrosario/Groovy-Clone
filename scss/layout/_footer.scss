@@ -112,14 +112,14 @@
         }
 
         .subscribe-decoration {
-          background: url(../../assets/icons/subscribe-decoration.png) no-repeat;
-          background-size: contain;
           height: 103px;
           left: -6%;
           position: absolute;
           top: 30px;
           width: 125px;
           z-index: 1;
+          background: url("https://res.cloudinary.com/dlghcisov/image/upload/v1673991313/projects/Groovy/assets/subscribe-decoration_kifyta.png") no-repeat;
+          background-size: contain;
         }
       }
 
