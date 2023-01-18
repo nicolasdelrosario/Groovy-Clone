@@ -27,7 +27,7 @@
 <h2>| License</h2>
 
 
-<p>This project is available under the MIT license. See the <b><a title="License" target="_blank" href="https://choosealicense.com/licenses/mit/">LICENSE</a></b> </p>
+<p>This project is available under the MIT license. See the <b><a title="License" target="_blank" href="https://github.com/nicolasdelrosario/Groovy-Clone/blob/main/LICENSE">LICENSE</a></b> </p>
 
 
 
