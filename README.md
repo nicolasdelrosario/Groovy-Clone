@@ -5,6 +5,10 @@
 </div>
 
 <p align="center">
+  <img src="https://res.cloudinary.com/dlghcisov/image/upload/v1674005371/projects/Groovy/assets/groovy-homepage.png" alt="Home Page">
+</p>
+
+<p align="center">
   <img src="./.github/src/desktop-speed.svg" alt="Desktop Speed">
 </p>
 
